@@ -2,28 +2,24 @@
 
 import { motion } from 'framer-motion';
 
-import { SiNextdotjs, SiTypescript, SiReact, SiTailwindcss, SiShadcnui, SiFramer, SiNodedotjs, SiExpress, SiMongodb, SiPostgresql, SiGit, SiDocker } from 'react-icons/si';
-import { FaLaptopCode, FaDatabase, FaMobileAlt, FaUserSecret } from 'react-icons/fa';
+import { SiKalilinux, SiWireshark, SiOwasp, SiLinux, SiPython, SiGnubash } from 'react-icons/si';
+import { FaShieldAlt, FaNetworkWired, FaBug, FaKey, FaSearch, FaUserSecret, FaTerminal, FaBomb } from 'react-icons/fa';
 import { SectionTitle } from './SectionTitle';
 
 export default function Skills() {
   const skills = [
-    { name: "Next.js", icon: SiNextdotjs },
-    { name: "TypeScript", icon: SiTypescript },
-    { name: "React", icon: SiReact },
-    { name: "Tailwind CSS", icon: SiTailwindcss },
-    { name: "Shadcn/ui", icon: SiShadcnui },
-    { name: "Framer Motion", icon: SiFramer },
-    { name: "Node.js", icon: SiNodedotjs },
-    { name: "Express.js", icon: SiExpress },
-    { name: "MongoDB", icon: SiMongodb },
-    { name: "PostgreSQL", icon: SiPostgresql },
-    { name: "Git", icon: SiGit },
-    { name: "Docker", icon: SiDocker },
-    { name: "Cyber Security", icon: FaUserSecret },
-    { name: "RESTful APIs", icon: FaDatabase }, 
-    { name: "UI/UX Design", icon: FaLaptopCode },
-    { name: "Responsive Web Design", icon: FaMobileAlt },
+    { name: "Network Security", icon: FaNetworkWired, color: "#0077B5", bg: "#E1F5FE" },
+    { name: "Penetration Testing", icon: FaUserSecret, color: "#D32F2F", bg: "#FFEBEE" },
+    { name: "Linux Administration", icon: SiLinux, color: "#000000ff", bg: "#FFF9C4" }, // Linux often associated with yellow/black (Tux) or just terminal colors
+    { name: "Python for Security", icon: SiPython, color: "#3776AB", bg: "#E3F2FD" },
+    { name: "Bash Scripting", icon: SiGnubash, color: "#4EAA25", bg: "#E8F5E9" },
+    { name: "Wireshark", icon: SiWireshark, color: "#1679A7", bg: "#E1F5FE" },
+    { name: "Burp Suite", icon: FaBug, color: "#FF6633", bg: "#FBE9E7" },
+    { name: "Metasploit", icon: FaBomb, color: "#1B6AC6", bg: "#E3F2FD" },
+    { name: "Kali Linux", icon: SiKalilinux, color: "#557C94", bg: "#E0F7FA" },
+    { name: "Cryptography", icon: FaKey, color: "#9C27B0", bg: "#F3E5F5" },
+    { name: "OWASP Top 10", icon: SiOwasp, color: "#000000", bg: "#F5F5F5" },
+    { name: "Digital Forensics", icon: FaSearch, color: "#00BCD4", bg: "#E0F7FA" },
   ];
 
   const containerVariants = {
@@ -59,7 +55,8 @@ export default function Skills() {
           return (
             <motion.span
               key={index}
-              className="bg-secondary text-secondary-foreground md:text-lg text-sm px-3 py-2 md:px-6 md:py-3 rounded-full shadow-md hover:scale-105 transition-transform duration-300 cursor-pointer flex items-center gap-2" // Menambahkan flex dan gap untuk tata letak ikon dan teks
+              className="md:text-lg text-sm px-3 py-2 md:px-6 md:py-3 rounded-full shadow-md hover:scale-105 transition-transform duration-300 cursor-pointer flex items-center gap-2"
+              style={{ backgroundColor: skill.bg, color: skill.color }}
               variants={itemVariants}
             >
               {IconComponent && <IconComponent className="md:text-2xl text-xl" />}

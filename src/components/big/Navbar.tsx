@@ -11,7 +11,6 @@ export function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const navLinks = [
-    { name: 'Ineery', href: '#ineery' },
     { name: 'About Me', href: '#about-me' },
     { name: 'Experience', href: '#experience' },
     { name: 'Skills', href: '#skills' },
@@ -23,7 +22,7 @@ export function Navbar() {
     <nav className="fixed top-0 left-0 w-full z-50 bg-background/95 border-b border-border/50 px-4 md:px-48 py-4 flex items-center justify-between">
       {/* Logo */}
       <div className="flex items-center space-x-2">
-        <span className="text-2xl font-bold text-foreground">Ineery.</span>
+        <span className="text-2xl font-bold text-foreground">iihn.</span>
       </div>
 
       {/* Desktop Nav Links */}

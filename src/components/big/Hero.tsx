@@ -24,7 +24,7 @@ export function Hero() {
           animate="visible"
           variants={textVariants}
         >
-          Ineery
+          iihn
         </motion.h1>
         <motion.p
           className="text-lg md:text-xl text-foreground/80 leading-relaxed max-w-3xl mx-auto"
@@ -33,7 +33,7 @@ export function Hero() {
           variants={textVariants}
           transition={{ delay: 0.2 }}
         >
-          Ineery is <strong>more than</strong> just a portfolio — it&apos;s a <strong>reflection of curiosity, growth, and a commitment</strong> to building purposeful digital solutions. Dive into my work and discover how I turn concepts into <strong>clean, modern, and meaningful</strong> experiences
+          iihn is <strong>more than</strong> just a portfolio — it&apos;s a <strong>reflection of curiosity, growth, and a commitment</strong> to building purposeful digital solutions. Dive into my work and discover how I turn concepts into <strong>clean, modern, and meaningful</strong> experiences
         </motion.p>
 
         <motion.div
@@ -43,7 +43,7 @@ export function Hero() {
           variants={buttonVariants}
         >
           <Link
-            className="bg-transparent border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-6 text-lg rounded-full shadow-lg transition-all duration-300 transform"
+            className="bg-transparent border-primary text-primary hover:text-accent px-6 py-4 text-lg rounded-full shadow-lg transition-all duration-300 transform"
             href='#aboutme'
           >
             Let&apos;s go 
