@@ -7,10 +7,10 @@ export function Footer() {
       <div className="container mx-auto px-4 md:px-8 grid grid-cols-1 md:grid-cols-4 gap-8">
         <div className="space-y-4">
           <div className="flex items-center space-x-2">
-            <span className="text-xl font-bold">Ineery.</span>
+            <span className="text-xl font-bold">iihn.</span>
           </div>
           <p className="text-sm text-muted-foreground">
-            Hi there, im an information technology enthusiast.
+            Hi there, im an cyber security enthusiast.
           </p>
           <div className="flex space-x-4 mt-4">
             <Link href="#" aria-label="Facebook" className="text-muted-foreground hover:text-primary transition-colors">

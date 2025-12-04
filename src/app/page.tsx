@@ -22,28 +22,28 @@ export default function Home() {
 
   const projects = [
     {
-      title: 'GemFood — Local E-Commerce for Culinary Products',
-      description: 'Built a custom e-commerce platform specifically designed for local food sellers in my village. The app supports dual roles (customer & partner), order tracking, Firebase authentication, and clean UI separation using Next.js app router. The project emphasizes full-stack skills, user experience, and real-world business logic.',
-      linkHref: '#',
-      delay: 0.2,
-      tech: ['Next.js', 'TypeScript', 'Firebase', 'Tailwind CSS'],
-      imagePath: '/images/ecommerce.jpg'
-    },
-    {
-      title: 'Cyber Security Notes — GitHub Markdown Archive',
-      description: 'A growing collection of personal study notes and summaries on cybersecurity topics, including networking, penetration testing, Wi-Fi exploitation, and ethical hacking. Organized in Markdown format on GitHub to help beginners and track my learning progress in a clean, public archive.',
-      linkHref: 'https://github.com/ihsanlearn/cs',
-      delay: 0.6,
-      tech: ['Cyber Security', 'GitHub', 'Networking'],
-      imagePath: '/images/cyber-security.jpg'
-    },
-    {
-      title: 'Daisuke Clinic — Java CLI Patient Management System',
-      description: 'A command-line based medical record management system built using Java without external frameworks. It manages patient records, schedules, and visit logs, storing data in structured TXT files. This project demonstrates solid OOP design and hands-on implementation of custom file-based storage.',
-      linkHref: 'https://github.com/ihsanlearn/dsa-clinic',
+      title: 'Subihnder — Subdomain Enumeration Tool',
+      description: 'A powerful reconnaissance tool for discovering subdomains. Essential for security assessments and bug bounty hunting, it automates the process of finding hidden subdomains to expand the attack surface visibility.',
+      linkHref: 'https://github.com/subihnder.git',
       delay: 0.4,
-      tech: ['Java', 'CLI', 'File I/O', 'OOP'],
-      imagePath: '/images/clinic.jpg'
+      tech: ['Reconnaissance', 'Security', 'ProjectDiscovery'],
+      imagePath: '/images/subihnder.png'
+    },
+    {
+      title: 'RedirX — Advanced Open Redirect Scanner',
+      description: 'RedirX is a fast and concurrent tool designed to detect Open Redirect vulnerabilities. It supports single URL scanning, list scanning, and pipelining from other tools. With customizable payloads and multi-threading support, it is an essential tool for bug bounty hunters and penetration testers.',
+      linkHref: 'https://github.com/ihsanlearn/redirx.git',
+      delay: 0.2,
+      tech: ['Go', 'Networking', 'HTTP'],
+      imagePath: '/images/redirx.png'
+    },
+    {
+      title: 'ihnurls — High-performance URL Harvester',
+      description: 'URL harvesting, filtering, classification, parameter discovery, GF-pattern extraction, cloud indicator detection, sensitive path matching, and more — all wrapped in a clean, colored terminal interface built with Rich.',
+      linkHref: 'https://github.com/ihsanlearn/ihnurls.git',
+      delay: 0.6,
+      tech: ['Reconnaissance', 'Security', 'ProjectDiscovery'],
+      imagePath: '/images/ihnurls.png'
     }
   ];
 
@@ -93,7 +93,7 @@ export default function Home() {
                 Ihsan Restu Adi
               </motion.h2>
               <p className="text-lg text-muted-foreground">
-                I’m an Informatics student at <strong>Universitas Sebelas Maret (UNS)</strong> with a strong interest in <strong>cybersecurity, IoT, and Networking</strong>. I enjoy learning through <strong>hands-on projects and real-world experiments</strong>.
+                I’m an Informatics student at <strong>Universitas Sebelas Maret (UNS)</strong> with a strong interest in <strong>cybersecurity and Networking</strong>. I enjoy learning through <strong>hands-on projects and real-world experiments</strong>.
               </p>
               <Link href='#contact' className="border-color-accent text-primary hover:underline py-2 text-lg rounded-full">
                 Interest?
@@ -134,7 +134,7 @@ export default function Home() {
             })}
           </div>
           <div className="text-center mt-12">
-            <Button variant="outline" className="border-color-primary text-color-primary hover:bg-color-primary hover:text-primary-foreground px-8 py-4 text-lg rounded-full">
+            <Button variant="link" className="text-primary hover:text-accent px-8 py-4 text-lg rounded-full hover:no-underline" onClick={() => window.open('https://github.com/ihsanlearn', '_blank')}>
               View More Projects
             </Button>
           </div>
