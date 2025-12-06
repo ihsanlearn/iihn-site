@@ -15,7 +15,16 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "iihn",
-  description: "Ihsan Restu Adi Portfolio Website.",
+  description: "Portfolio Ihsan Restu Adi - Cyber Security Enthusiast, Ethical Hacker, and Developer",
+  keywords: ["Ihsan Restu Adi", "Cyber Security", "Ethical Hacker", "Portfolio", "Bug Bounty Hunter"],
+  authors: [{ name: "Ihsan Restu Adi" }],
+  openGraph: {
+    title: "Ihsan Restu Adi",
+    url: "https://iihn.fun",
+    siteName: "Ihsan Restu Adi",
+    images: "/og-image.png",
+    type: "website",
+  }
 };
 
 export default function RootLayout({
