@@ -8,6 +8,6 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
       },
     ],
-    sitemap: "https://iihn.fun/sitemap.xml",
+    sitemap: "https://www.iihn.fun/sitemap.xml",
   };
 }
