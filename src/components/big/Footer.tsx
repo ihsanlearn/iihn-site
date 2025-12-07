@@ -60,7 +60,7 @@ export function Footer() {
       </div>
 
       <div className="container mx-auto px-4 md:px-8 text-center text-sm text-muted-foreground mt-12 border-t border-border/50 pt-8">
-        Ihsan Restu Adi &copy; {new Date().getFullYear()} Ineery. All rights reserved.
+        Ihsan Restu Adi &copy; {new Date().getFullYear()} iihn. All rights reserved.
       </div>
     </footer>
   );
