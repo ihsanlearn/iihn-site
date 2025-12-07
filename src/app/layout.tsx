@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.iihn.fun"),
   title: {
-    default: "iihn - Ihsan Restu Adi",
+    default: "iihn | Ihsan Restu Adi",
     template: "%s | Ihsan Restu Adi"
   },
   description:
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     apple: "/apple-touch-icon.png"
   },
   openGraph: {
-    title: "Ihsan Restu Adi — Cyber Security Enthusiast",
+    title: "iihn | Ihsan Restu Adi",
     description:
       "Portfolio and personal website of Ihsan Restu Adi, Ethical Hacker & Cyber Security Enthusiast.",
     url: "https://www.iihn.fun",
