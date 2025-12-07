@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.iihn.fun"),
   title: {
-    default: "Ihsan Restu Adi — Cyber Security Enthusiast",
+    default: "iihn - Ihsan Restu Adi",
     template: "%s | Ihsan Restu Adi"
   },
   description:
