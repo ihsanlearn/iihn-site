@@ -23,7 +23,7 @@ export default function ThemeToggle() {
       onClick={toggleTheme}
       className="bg-secondary text-[var(--text-on-dark)] px-4 py-2 rounded"
     >
-      {isDark ? "☀️ Light Mode" : "🌙 Dark Mode"}
+      {isDark ? "☀️ " : "🌙"}
     </button>
   )
 }
