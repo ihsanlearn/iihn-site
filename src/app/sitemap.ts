@@ -6,7 +6,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: "https://www.iihn.fun",
       lastModified: new Date(),
       changeFrequency: "daily",
-      priority: 1.0,
+      priority: 1,
     },
   ];
 }
