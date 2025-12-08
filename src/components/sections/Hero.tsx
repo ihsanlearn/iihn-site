@@ -15,14 +15,14 @@ export default function Hero() {
             transition={{ duration: 0.8 }}
             className="space-y-4"
           >
-            <h2 className="text-primary font-mono text-sm tracking-widest uppercase">
+            <h2 className="text-primary font-mono text-xs md:text-sm tracking-widest uppercase">
               Security Researcher & Developer
             </h2>
-            <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-foreground">
+            <h1 className="text-4xl md:text-7xl font-bold tracking-tight text-foreground">
               Securing the digital <br className="hidden md:block" />
               <span className="text-muted-foreground">infrastructure.</span>
             </h1>
-            <p className="max-w-xl text-lg text-muted-foreground leading-relaxed">
+            <p className="max-w-xl text-md md:text-lg text-muted-foreground leading-relaxed">
               I specialize in ethical hacking, vulnerability assessment, and building secure, resilient systems for the modern web.
             </p>
           </motion.div>

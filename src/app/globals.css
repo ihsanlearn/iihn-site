@@ -46,45 +46,44 @@
 }
 
 :root {
-  /* Light Mode - Premium, Depth, Linear-esque */
-  --background: #FAFAFA;
-  --foreground: #1A1A1A;
+  /* Light Mode - Warm Minimal, Professional */
+  --background: #fdfaf5;
+  --foreground: #1a1611;
 
-  --card: #FFFFFF;
-  --card-foreground: #1A1A1A;
+  --card: #ffffff;
+  --card-foreground: #1a1611;
 
-  --popover: #FFFFFF;
-  --popover-foreground: #1A1A1A;
+  --popover: #ffffff;
+  --popover-foreground: #1a1611;
 
-  --primary: var(--color-amber-500);
+  --primary: #fd9a00;
   --primary-foreground: #ffffff;
 
-  --separator: #dedede;
+  --separator: #e2d6c9;
 
-  --secondary: #F4F4F5;
-  --secondary-foreground: #18181B;
+  --secondary: #e9dfd1;
+  --secondary-foreground: #1a1611;
 
   --tertiary: #ea7900;
 
-  --muted: #F4F4F5;
-  --muted-foreground: #71717A;
+  --muted: #e2d6c9;
+  --muted-foreground: #6f5b47;
 
-  --accent: #F4F4F5;
-  --accent-foreground: #18181B;
+  --accent: #e9dfd1;
+  --accent-foreground: #1a1611;
 
-  --destructive: #ef4444;
+  --destructive: #cc2e2e;
   --destructive-foreground: #ffffff;
 
-  --border: #E4E4E7;
-  --input: #E4E4E7;
-
-  --radius: 0.75rem;
+  --border: #e2d6c9;
+  --input: #e2d6c9;
+  --ring: #fd9a00;
 }
 
 .dark {
   /* Dark Mode - Tech, Cyber, Deep Charcoal */
-  --background: #0f0c08; /* Very dark blue/black */
-  --foreground: #fbf9f7; /* Slate 50 */
+  --background: #0f0c08;
+  --foreground: #fbf9f7;
 
   --card: #1a1611;
   --card-foreground: #fbf9f7;
@@ -92,21 +91,18 @@
   --popover: #1a1611;
   --popover-foreground: #fbf9f7;
 
-  /* --primary: #3b82f6; Brighter Blue for Dark Mode */
-  --primary: #fd9a00; /* #fd9a00 */
+  --primary: #fd9a00;
   --primary-foreground: #ffffff;
 
   --separator: #342514;
 
-  --secondary: #342514; /* Slate 800 */
+  --secondary: #342514;
   --secondary-foreground: #fbf9f7;
 
   --tertiary: #ea7900;
   
   --muted: #342514;
-  /* --muted: #392e1d;
-  --muted-foreground: #b4a691; */
-  --muted-foreground: #b09e8b; /* Slate 400 */
+  --muted-foreground: #b09e8b;
 
   --accent: #423424;
   --accent-foreground: #fbf9f7;

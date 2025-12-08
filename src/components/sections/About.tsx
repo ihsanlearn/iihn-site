@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 export default function About() {
   return (
     <section id="about" className="min-h-screen flex items-center justify-center bg-separator/30">
-      <div className="container px-4 md:px-6">
+      <div className="container py-24 px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-24 items-center">
           
           <motion.div
@@ -14,16 +14,14 @@ export default function About() {
             viewport={{ once: true }}
             className="space-y-6"
           >
-            <h2 className="text-3xl font-bold tracking-tight text-primary">The Mind</h2>
-            <div className="space-y-4 text-foreground text-lg leading-relaxed">
+            <h2 className="text-2xl md:text-3xl font-bold tracking-tight text-primary">The Mind</h2>
+            <div className="space-y-4 text-foreground text-md md:text-lg leading-relaxed">
               <p>
-                I am a passionate <span className="text-primary font-medium">Cybersecurity</span> and <span className="text-primary font-medium">Developer</span> based in Indonesia. My journey began with a curiosity about how systems break, which naturally evolved into learning how to build them stronger.
+                I’m a passionate <span className="text-primary font-medium">Cybersecurity</span> enthusiast and <span className="text-primary font-medium">Developer</span>, focused on building and breaking systems to make technology safer.
+                Blending experience in offensive security and secure engineering, I specialize in designing solutions where security is built in from the start.
               </p>
               <p>
-                With a background in both offensive security (Bug Bounty Hunting) and defensive engineering, I bridge the gap between security and development. I believe in security by design, not as an afterthought.
-              </p>
-              <p>
-                Currently, I am pursuing my degree at <span className="text-primary font-medium">Universitas Sebelas Maret</span>, where I combine academic rigor with practical security research to solve real-world challenges.
+                Currently studying at <span className="text-primary font-medium">Universitas Sebelas Maret</span> while conducting practical cyber research and tackling real-world security challenges.
               </p>
             </div>
           </motion.div>

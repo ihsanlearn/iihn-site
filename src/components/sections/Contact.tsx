@@ -15,8 +15,8 @@ export default function Contact() {
              transition={{ duration: 0.6 }}
              viewport={{ once: true }}
           >
-             <h2 className="text-4xl font-bold tracking-tight mb-6 text-primary">Let's Secure the Future</h2>
-             <p className="text-xl text-foreground leading-relaxed mb-8">
+             <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6 text-primary">Let's Secure the Future</h2>
+             <p className="text-lg md:text-xl text-foreground leading-relaxed mb-8">
                I'm always open to discussing new opportunities, security assessments, or collaboration on open-source projects.
              </p>
           </motion.div>
@@ -28,11 +28,11 @@ export default function Contact() {
              viewport={{ once: true }}
              className="flex flex-col sm:flex-row items-center justify-center gap-4"
           >
-             <a href="mailto:iihsannlearn@gmail.com" className="w-full sm:w-auto h-14 px-8 rounded-xl bg-tertiary text-primary-foreground font-medium text-lg flex items-center justify-center shadow-lg hover:bg-tertiary/90 hover:scale-105 transition-all">
+             <a href="mailto:iihsannlearn@gmail.com" className="w-full sm:w-auto h-14 px-8 rounded-xl bg-tertiary text-primary-foreground font-medium text-md md:text-lg flex items-center justify-center shadow-lg hover:bg-tertiary/90 hover:scale-105 transition-all">
                 Send an Email
              </a>
-             <a href="https://linkedin.com/in/ihsan-restu-adi" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto h-14 px-8 rounded-xl bg-card border border-input text-foreground font-medium text-lg flex items-center justify-center shadow-sm hover:bg-accent hover:border-primary/30 transition-all">
-                LinkedIn
+             <a href="https://github.com/ihsanlearn" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto h-14 px-8 rounded-xl bg-card border border-input text-foreground font-medium text-lg flex items-center justify-center shadow-sm hover:bg-accent hover:border-primary/30 transition-all">
+                Github
              </a>
           </motion.div>
 
@@ -44,7 +44,7 @@ export default function Contact() {
             className="pt-16 mt-16 border-t border-border"
           >
              <p className="text-sm text-muted-foreground">
-               Ihsan Restu Adi&copy; {new Date().getFullYear()} iihn.
+               &copy; {new Date().getFullYear()} Ihsan Restu Adi
              </p>
           </motion.div>
         </div>

@@ -28,7 +28,7 @@ export default function Writing() {
 
   return (
     <section id="writing" className="min-h-screen py-24 flex items-center justify-center">
-      <div className="container px-4 md:px-6">
+      <div className="container px-6">
         <motion.div
            initial={{ opacity: 0, y: 20 }}
            whileInView={{ opacity: 1, y: 0 }}
@@ -37,13 +37,9 @@ export default function Writing() {
            className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-6"
         >
           <div>
-            <h2 className="text-3xl font-bold tracking-tight mb-2 text-primary">Research & Writing</h2>
-            <p className="text-foreground">Thoughts on security research, engineering, and digital safety.</p>
+            <h2 className="text-2xl md:text-3xl font-bold tracking-tight mb-2 text-primary">Research & Writing</h2>
+            <p className="text-foreground text-md md:text-lg">Thoughts on security research, engineering, and digital safety.</p>
           </div>
-          <a href="#" className="text-sm font-medium text-primary hover:underline underline-offset-4 flex items-center gap-2">
-            View All Articles 
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-          </a>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -76,6 +72,12 @@ export default function Writing() {
                     </div>
                  </motion.div>
             ))}
+        </div>
+        <div className="flex items-center mt-8">
+            <a href="#writing" className="text-sm font-medium text-primary hover:underline underline-offset-4 flex items-center gap-2">
+                View All Articles 
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
         </div>
       </div>
     </section>

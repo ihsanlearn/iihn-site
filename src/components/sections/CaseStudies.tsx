@@ -31,15 +31,15 @@ export default function CaseStudies() {
   
     return (
       <section id="case-studies" className="min-h-screen py-24 flex items-center justify-center">
-        <div className="container px-4 md:px-6">
+        <div className="container px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="mb-16"
+            className="mb-8 md:mb-16"
           >
-            <h2 className="text-3xl font-bold tracking-tight mb-4 text-primary">Experiences</h2>
+            <h2 className="text-2xl md:text-3xl font-bold tracking-tight mb-4 text-primary">Case Studies</h2>
             <p className="text-foreground max-w-2xl">
               Deep dives into security challenges, architectural decisions, and measurable outcomes.
             </p>

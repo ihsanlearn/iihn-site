@@ -1,6 +1,6 @@
 import Hero from "@/components/sections/Hero";
 import About from "@/components/sections/About";
-import CaseStudies from "@/components/sections/Experiences";
+import CaseStudies from "@/components/sections/CaseStudies";
 import Skills from "@/components/sections/Skills";
 import Writing from "@/components/sections/Writing";
 import Contact from "@/components/sections/Contact";
