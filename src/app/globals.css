@@ -146,6 +146,29 @@
   }
 }
 
+/* View Transitions for Theme Toggle */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none !important;
+  mix-blend-mode: normal;
+}
+
+::view-transition-old(root) {
+  z-index: 2;
+}
+
+::view-transition-new(root) {
+  z-index: 1;
+}
+
+.dark::view-transition-old(root) {
+  z-index: 1;
+}
+
+.dark::view-transition-new(root) {
+  z-index: 2;
+}
+
 /* Custom Text Selection - Global Scope */
 ::selection {
   background-color: var(--primary);
@@ -163,6 +186,10 @@
      background-color: rgba(37, 99, 235, 0.2);
      color: #2563eb;
   }
+}
+
+html {
+  view-transition-name: root;
 }
 
 /* We need to handle theme awareness manually or rely on CSS variables resolving correctly */
