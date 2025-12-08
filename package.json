@@ -1,5 +1,5 @@
 {
-  "name": "ineery",
+  "name": "iihn",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -22,10 +22,12 @@
     "lucide-react": "^0.525.0",
     "next": "^16.0.7",
     "next-sitemap": "^4.2.3",
+    "next-themes": "^0.4.6",
     "react": "^19.2.1",
     "react-dom": "^19.2.1",
     "react-icons": "^5.5.0",
-    "tailwind-merge": "^3.3.1"
+    "tailwind-merge": "^3.3.1",
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
@@ -39,6 +41,7 @@
     "postcss": "^8.5.6",
     "tailwindcss": "^4.1.11",
     "tailwindcss-cli": "^0.1.2",
+    "ts-prune": "^0.10.3",
     "tw-animate-css": "^1.3.5",
     "typescript": "^5"
   }
