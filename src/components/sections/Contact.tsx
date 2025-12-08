@@ -44,7 +44,7 @@ export default function Contact() {
             className="pt-16 mt-16 border-t border-border"
           >
              <p className="text-sm text-muted-foreground">
-               &copy; {new Date().getFullYear()} iihn.
+               Ihsan Restu Adi&copy; {new Date().getFullYear()} iihn.
              </p>
           </motion.div>
         </div>
