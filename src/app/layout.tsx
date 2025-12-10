@@ -93,26 +93,172 @@ export default function RootLayout({
           id="structured-data"
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-             __html: JSON.stringify({
+            __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "Person",
-              name: "Ihsan Restu Adi",
-              alternateName: "Ihsan",
-              description:
-                "Cyber Security Enthusiast, Ethical Hacker, Bug Bounty Hunter, and Developer",
-              url: "https://www.iihn.fun",
-              image: "https://www.iihn.fun/opengraph-image.jpg",
-              sameAs: [
-                "https://github.com/ihsanlearn",
-                "https://www.linkedin.com/in/ihsan-restu-adi/",
-                "https://x.com/Ihsan0958761111",
-              ],
-              jobTitle: "Ethical Hacker",
-              worksFor: {
-                "@type": "Organization",
-                name: "Independent Researcher"
-              }
-            }),
+              "@graph": [
+                {
+                  "@type": "Person",
+                  "@id": "https://www.iihn.fun/#about",
+                  "name": "Ihsan Restu Adi",
+                  "alternateName": "Ihsan",
+                  "description": "Cyber Security Enthusiast, Ethical Hacker, Bug Bounty Hunter, Undergraduate Computer Science Student, and Developer.",
+                  "url": "https://www.iihn.fun",
+                  "image": "https://www.iihn.fun/opengraph-image.jpg",
+                  "sameAs": [
+                    "https://github.com/ihsanlearn",
+                    "https://www.linkedin.com/in/ihsan-restu-adi/",
+                    "https://x.com/Ihsan0958761111"
+                  ],
+                  "jobTitle": "Cyber Security Enthusiast",
+                  "affiliation": {
+                    "@type": "CollegeOrUniversity",
+                    "name": "Universitas Sebelas Maret",
+                    "description": "Undergraduate Informatics Student"
+                  },
+                  "knowsAbout": [
+                    "Web Application Penetration Testing",
+                    "Vulnerability Assessment",
+                    "Exploit Research",
+                    "Bug Bounty Hunting",
+                    "Next.js",
+                    "TypeScript",
+                    "Python",
+                    "Go (Golang)",
+                    "Docker",
+                    "Linux System Administration",
+                    "Burp Suite"
+                  ]
+                },
+
+                {
+                  "@type": "Organization",
+                  "@id": "https://www.iihn.fun/#hero",
+                  "name": "iihn",
+                  "url": "https://www.iihn.fun",
+                  "logo": "https://www.iihn.fun/opengraph-image.jpg",
+                  "founder": { "@id": "https://www.iihn.fun/#about" },
+                  "foundingDate": "2024",
+                  "description": "Personal portfolio and cyber security research platform.",
+                  "sameAs": [
+                    "https://github.com/ihsanlearn",
+                    "https://x.com/Ihsan0958761111"
+                  ]
+                },
+
+                {
+                  "@type": "WebSite",
+                  "@id": "https://www.iihn.fun/#hero",
+                  "url": "https://www.iihn.fun",
+                  "name": "iihn | Ihsan Restu Adi",
+                  "description":
+                    "Portfolio and research website of Ihsan Restu Adi, Cyber Security Enthusiast and Developer.",
+                  "publisher": {
+                    "@id": "https://www.iihn.fun/#hero"
+                  },
+                  "inLanguage": "en-US"
+                },
+
+                {
+                  "@type": "WebPage",
+                  "@id": "https://www.iihn.fun/#hero",
+                  "url": "https://www.iihn.fun",
+                  "name": "iihn | Ihsan Restu Adi",
+                  "description":
+                    "Personal website and portfolio of Ihsan Restu Adi, Ethical Hacking and Cyber Security Enthusiast.",
+                  "isPartOf": {
+                    "@id": "https://www.iihn.fun/#hero"
+                  },
+                  "about": {
+                    "@id": "https://www.iihn.fun/#about"
+                  },
+                  "breadcrumb": {
+                    "@type": "BreadcrumbList",
+                    "itemListElement": [
+                      {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Home",
+                        "item": "https://www.iihn.fun"
+                      }
+                    ]
+                  },
+                  "inLanguage": "en-US"
+                },
+
+                {
+                  "@type": "Blog",
+                  "@id": "https://www.iihn.fun/#writing",
+                  "url": "https://www.iihn.fun/#writing",
+                  "name": "Ihsan's Security Research & Writings",
+                  "description":
+                    "Collection of thoughts and writings related to cyber security research, digital safety, engineering, and personal studies.",
+                  "publisher": { "@id": "https://www.iihn.fun/#hero" },
+                  "author": { "@id": "https://www.iihn.fun/#about" },
+                  "blogPost": [
+                    {
+                      "@type": "BlogPosting",
+                      "headline": "Building My Own Recon Automation Lab",
+                      "datePublished": "2025-12-02",
+                      "description":
+                        "A personal journey documenting how I built my private lab for ethical hacking.",
+                      "author": { "@id": "https://www.iihn.fun/#about" },
+                      "mainEntityOfPage": "https://www.iihn.fun/#writing"
+                    },
+                    {
+                      "@type": "BlogPosting",
+                      "headline":
+                        "Why Strong Fundamentals Matter More Than Tools in Cybersecurity",
+                      "datePublished": "2025-11-18",
+                      "description":
+                        "Reflecting on the importance of networking, Linux fundamentals, and protocol understanding.",
+                      "author": { "@id": "https://www.iihn.fun/#about" },
+                      "mainEntityOfPage": "https://www.iihn.fun/#writing"
+                    },
+                    {
+                      "@type": "BlogPosting",
+                      "headline":
+                        "Experimenting with Custom Burp Extensions using Python",
+                      "datePublished": "2025-10-22",
+                      "description":
+                        "Documenting early experiments scripting Burp Suite extensions using Python.",
+                      "author": { "@id": "https://www.iihn.fun/#about" },
+                      "mainEntityOfPage": "https://www.iihn.fun/#writing"
+                    }
+                  ]
+                },
+
+                {
+                  "@type": "ItemList",
+                  "@id": "https://www.iihn.fun/#case-studies",
+                  "name": "Security Case Studies",
+                  "description":
+                    "Deep dives into security challenges, architectural decisions, and outcomes.",
+                  "itemListElement": [
+                    {
+                      "@type": "CreativeWork",
+                      "position": 1,
+                      "name": "Internal Penetration Testing Lab Development",
+                      "description":
+                        "Configured a multi-VM lab environment using Kali Linux and intentionally vulnerable applications."
+                    },
+                    {
+                      "@type": "CreativeWork",
+                      "position": 2,
+                      "name": "Automated Recon & Enumeration Workflow",
+                      "description":
+                        "Built a modular CLI tool to automate subdomain discovery and HTTP probing."
+                    },
+                    {
+                      "@type": "CreativeWork",
+                      "position": 3,
+                      "name": "Secure Authentication & Role-Based Access Web App",
+                      "description":
+                        "Developed a multi-role system with secure authentication and database RLS policies."
+                    }
+                  ]
+                }
+              ]
+            })
           }}
         />
       </head>
