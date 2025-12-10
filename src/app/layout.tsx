@@ -117,7 +117,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${plusJakarta.variable} ${inter.variable} ${ibmPlexMono.variable} antialiased bg-background text-foreground transition-colors duration-300 font-body`}
+        className={`${plusJakarta.variable} ${inter.variable} ${ibmPlexMono.variable} antialiased bg-background text-foreground font-body`}
       >
         <ThemeProvider
           attribute="class"

@@ -100,7 +100,7 @@
   --secondary-foreground: #fbf9f7;
 
   --tertiary: #ea7900;
-  
+
   --muted: #342514;
   --muted-foreground: #b09e8b;
 
@@ -154,11 +154,11 @@
 }
 
 ::view-transition-old(root) {
-  z-index: 2;
+  z-index: 1;
 }
 
 ::view-transition-new(root) {
-  z-index: 1;
+  z-index: 2147483647;
 }
 
 .dark::view-transition-old(root) {
@@ -166,7 +166,7 @@
 }
 
 .dark::view-transition-new(root) {
-  z-index: 2;
+  z-index: 2147483647;
 }
 
 /* Custom Text Selection - Global Scope */
@@ -183,8 +183,8 @@
     color: #2563eb;
   }
   ::-moz-selection {
-     background-color: rgba(37, 99, 235, 0.2);
-     color: #2563eb;
+    background-color: rgba(37, 99, 235, 0.2);
+    color: #2563eb;
   }
 }
 

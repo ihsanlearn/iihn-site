@@ -4,6 +4,8 @@ import * as React from "react"
 import { Moon, Sun } from "lucide-react"
 import { useTheme } from "next-themes"
 
+import { flushSync } from "react-dom"
+
 export function ThemeToggle() {
   const { setTheme, theme } = useTheme()
   const [mounted, setMounted] = React.useState(false)
@@ -11,7 +13,7 @@ export function ThemeToggle() {
   React.useEffect(() => {
     setMounted(true)
   }, [])
-
+  
   if (!mounted) {
     return null
   }
@@ -34,7 +36,9 @@ const toggleTheme = (e: React.MouseEvent<HTMLButtonElement>) => {
   )
 
   const transition = document.startViewTransition(() => {
-    setTheme(newTheme)
+    flushSync(() => {
+      setTheme(newTheme)
+    })
   })
 
   transition.ready.then(() => {
@@ -45,14 +49,12 @@ const toggleTheme = (e: React.MouseEvent<HTMLButtonElement>) => {
 
     document.documentElement.animate(
       {
-        clipPath: previousTheme === "dark" ? [...clipPath].reverse() : clipPath,
+        clipPath: clipPath,
       },
       {
         duration: 500,
         easing: "ease-in-out",
-        pseudoElement: previousTheme === "dark"
-          ? "::view-transition-old(root)"
-          : "::view-transition-new(root)",
+        pseudoElement: "::view-transition-new(root)",
       }
     )
   })
