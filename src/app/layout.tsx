@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     siteName: "iihn",
     images: [
       {
-        url: "https://www.iihn.fun/opengraph-image.png",
+        url: "https://www.iihn.fun/opengraph-image.jpg",
         width: 1200,
         height: 630
       }
@@ -72,7 +72,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Ihsan Restu Adi — Ethical Hacker",
     description: "Cyber Security Enthusiast and Bug Bounty Hunter",
-    images: "https://www.iihn.fun/opengraph-image.png",
+    images: "https://www.iihn.fun/opengraph-image.jpg",
   },
   verification: {
     google: "UPKAQQYkH1hUNYYGd4YFZZtGdEMAcvbLp1lRCa_htqQ",
@@ -101,7 +101,7 @@ export default function RootLayout({
               description:
                 "Cyber Security Enthusiast, Ethical Hacker, Bug Bounty Hunter, and Developer",
               url: "https://www.iihn.fun",
-              image: "https://www.iihn.fun/opengraph-image.png",
+              image: "https://www.iihn.fun/opengraph-image.jpg",
               sameAs: [
                 "https://github.com/ihsanlearn",
                 "https://www.linkedin.com/in/ihsan-restu-adi/",
