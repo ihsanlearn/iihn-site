@@ -37,13 +37,13 @@ export default function Hero() {
               href="#case-studies"
               className="inline-flex h-12 items-center justify-center rounded-xl bg-primary px-8 text-sm font-medium text-primary-foreground shadow-sm transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
             >
-              View Case Studies
+              Let's Deep Dive
             </a>
             <a 
               href="#contact"
               className="inline-flex h-12 items-center justify-center rounded-xl border border-input bg-background/50 backdrop-blur-sm px-8 text-sm font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
             >
-              Connect With Me
+              Connect Wme
             </a>
           </motion.div>
         </div>

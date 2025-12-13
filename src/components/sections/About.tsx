@@ -14,10 +14,10 @@ export default function About() {
             viewport={{ once: true }}
             className="space-y-6"
           >
-            <h2 className="text-2xl md:text-3xl font-bold tracking-tight text-primary">The Mind</h2>
+            <h2 className="text-2xl md:text-3xl font-bold tracking-tight text-primary">Overview</h2>
             <div className="space-y-4 text-foreground text-md md:text-lg leading-relaxed">
               <p>
-                I’m a passionate <span className="text-primary font-medium">Cybersecurity</span> enthusiast and <span className="text-primary font-medium">Developer</span>, focused on building and breaking systems to make technology safer.
+                I’m a passionate <span className="text-primary font-medium">Cybersecurity</span> and <span className="text-primary font-medium">Web Development</span> enthusiast, focused on building and breaking systems to make technology safer.
                 Blending experience in offensive security and secure engineering, I specialize in designing solutions where security is built in from the start.
               </p>
               <p>

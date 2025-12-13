@@ -5,11 +5,11 @@ export default function ScrollProgress() {
   const [activeSection, setActiveSection] = useState("hero")
 
   const sections = [
-    { id: "hero", label: "Hi" },
-    { id: "about", label: "The Mind" },
-    { id: "case-studies", label: "Experiences" },
+    { id: "hero", label: "Hi!" },
+    { id: "about", label: "Overview" },
+    { id: "case-studies", label: "Case Studies" },
     { id: "skills", label: "Focus Areas" },
-    { id: "writing", label: "Writing" },
+    { id: "writing", label: "Research & Writing" },
     { id: "contact", label: "Connect" },
   ]
 

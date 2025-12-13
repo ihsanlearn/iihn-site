@@ -4,25 +4,25 @@ import { motion } from "framer-motion"
 export default function Writing() {
   const articles = [
     {
-      title: "Building My Own Recon Automation Lab",
-      date: "Dec 02, 2025",
-      readTime: "7 min read",
-      excerpt: "A personal journey documenting how I built my private lab for ethical hacking, focusing on real-world recon workflows and automation experiments.",
-      category: "Lab Notes"
+      title: "Authentication Bypass via Race Condition in OAuth Flow",
+      date: "Oct 24, 2025",
+      readTime: "8 min read",
+      excerpt: "An in-depth analysis of a high-severity race condition vulnerability found in a financial application's OAuth 2.0 implementation.",
+      category: "Vulnerability"
     },
     {
-      title: "Why Strong Fundamentals Matter More Than Tools in Cybersecurity",
-      date: "Nov 18, 2025",
-      readTime: "5 min read",
-      excerpt: "Reflecting on the importance of networking, Linux, and protocol understanding before jumping into advanced exploit techniques and fancy tools.",
-      category: "Perspective"
+      title: "From Idle to Pwn: Chaining Prototype Pollution to RCE",
+      date: "Nov 2, 2025",
+      readTime: "12 min read",
+      excerpt: "How a simple prototype pollution in a Node.js dashboard widget led to full remote code execution.",
+      category: "Vulnerability"
     },
     {
-      title: "Experimenting with Custom Burp Extensions using Python",
+      title: "Massive Data Leak via IDOR in Support Ticket System",
       date: "Oct 22, 2025",
       readTime: "9 min read",
-      excerpt: "Documenting early experiments scripting Burp Suite extensions to speed up repetitive pentesting tasks and integrate with external recon tooling.",
-      category: "Engineering"
+      excerpt: "Uncovering an Insecure Direct Object Reference that exposed thousands of private support tickets containing PII.",
+      category: "Vulnerability"
     }
   ];
 
@@ -74,8 +74,8 @@ export default function Writing() {
             ))}
         </div>
         <div className="flex items-center mt-8">
-            <a href="#writing" className="text-sm font-medium text-primary hover:underline underline-offset-4 flex items-center gap-2">
-                View All Articles 
+            <a href="https://notes.iihn.fun/writeups" target="_blank" className="text-sm font-medium text-primary hover:underline underline-offset-4 flex items-center gap-2">
+                View More Notes/Writeups 
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
             </a>
         </div>

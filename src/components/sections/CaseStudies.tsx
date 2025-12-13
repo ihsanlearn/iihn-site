@@ -1,23 +1,17 @@
 "use client"
 import { motion } from "framer-motion"
+import { ChevronRight } from "lucide-react"
+import Link from "next/link"
 
 export default function CaseStudies() {
     const projects = [
       {
-        title: "Internal Penetration Testing Lab Development",
-        problem: "Needed a safe and controlled environment to practice real-world exploitation workflows.",
-        approach: "Configured a multi-VM lab environment using Kali Linux and intentionally vulnerable applications to simulate real attack surfaces.",
-        tools: ["Burp Suite", "OWASP ZAP", "DVWA", "Kali Linux"],
-        result: "Successfully performed end-to-end testing workflow including reconnaissance, vulnerability assessment, exploitation, and post-exploitation in a legal environment.",
-        caseStudyLink: "#"
-      },
-      {
-        title: "Automated Recon & Enumeration Workflow",
-        problem: "Manual recon for CTF and bug bounty learning was slow and inconsistent.",
-        approach: "Built a modular CLI tool to automate subdomain discovery, HTTP probing, screenshot capture, and technology fingerprinting.",
-        tools: ["Go (Golang)", "Python", "Nmap", "Subfinder", "httpx"],
-        result: "Reduced asset discovery time from hours to minutes with standardized output and expandable modules.",
-        caseStudyLink: "#"
+        title: "Security Toolkits Web App",
+        problem: "Needed a platform to learn secure system design and security hardening for modern applications.",
+        approach: "Developed a multi-role system with secure authentication, database RLS policies, and session protection mechanisms.",
+        tools: ["Next.js", "TypeScript"],
+        result: "Implemented RBAC and RLS rule sets that prevent privilege escalation and unauthorized access.",
+        caseStudyLink: "https://hackthic.iihn.fun"
       },
       {
         title: "Secure Authentication & Role-Based Access Web App",
@@ -25,7 +19,15 @@ export default function CaseStudies() {
         approach: "Developed a multi-role system with secure authentication, database RLS policies, and session protection mechanisms.",
         tools: ["Next.js", "TypeScript", "Supabase Auth", "PostgreSQL"],
         result: "Implemented RBAC and RLS rule sets that prevent privilege escalation and unauthorized access.",
-        caseStudyLink: "#"
+        caseStudyLink: "/work-in-progress"
+      },
+      {
+        title: "Security Notes Web App",
+        problem: "Needed a platform to document security research and findings.",
+        approach: "Built a modular CLI tool to automate subdomain discovery, HTTP probing, screenshot capture, and technology fingerprinting.",
+        tools: ["Next.js", "TypeScript"],
+        result: "Reduced asset discovery time from hours to minutes with standardized output and expandable modules.",
+        caseStudyLink: "https://notes.iihn.fun"
       }
     ]
   
@@ -90,10 +92,10 @@ export default function CaseStudies() {
                     ))}
                   </div>
                   
-                  <button className="text-sm font-medium text-primary hover:underline underline-offset-4 flex items-center gap-1">
-                    Read Full Study 
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-                  </button>
+                  <Link href={project.caseStudyLink} className="text-sm font-medium text-primary hover:underline underline-offset-4 flex items-center gap-1">
+                    Go to Project 
+                    <ChevronRight className="w-4 h-4" />
+                  </Link>
                 </div>
               </motion.div>
             ))}
