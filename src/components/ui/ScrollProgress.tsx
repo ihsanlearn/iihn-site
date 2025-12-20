@@ -10,6 +10,7 @@ export default function ScrollProgress() {
     { id: "case-studies", label: "Case Studies" },
     { id: "skills", label: "Focus Areas" },
     { id: "writing", label: "Research & Writing" },
+    { id: "services", label: "Services" },
     { id: "contact", label: "Connect" },
   ]
 

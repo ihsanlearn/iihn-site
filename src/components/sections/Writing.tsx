@@ -27,7 +27,7 @@ export default function Writing() {
   ];
 
   return (
-    <section id="writing" className="min-h-screen py-24 flex items-center justify-center">
+    <section id="writing" className="min-h-screen py-24 flex bg-secondary/30 items-center justify-center">
       <div className="container px-6">
         <motion.div
            initial={{ opacity: 0, y: 20 }}

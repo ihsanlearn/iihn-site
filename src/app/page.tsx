@@ -4,6 +4,7 @@ import CaseStudies from "@/components/sections/CaseStudies";
 import Skills from "@/components/sections/Skills";
 import Experience from "@/components/sections/Experience";
 import Writing from "@/components/sections/Writing";
+import Services from "@/components/sections/Services";
 import Contact from "@/components/sections/Contact";
 import ScrollProgress from "@/components/ui/ScrollProgress";
 
@@ -17,6 +18,7 @@ export default function Home() {
       <Skills />
       <Experience />
       <Writing />
+      <Services />
       <Contact />
     </main>
   );

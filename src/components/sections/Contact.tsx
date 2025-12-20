@@ -1,7 +1,28 @@
 "use client"
 import { motion } from "framer-motion"
+import { useLanguage } from "@/lib/LanguageContext"
 
 export default function Contact() {
+
+  const { language } = useLanguage()
+
+  const labels = {
+    en: {
+      headline: "Let's Secure the Future",
+      subheadline: "I'm always open to discussing new opportunities, security assessments, or collaboration on website projects.",
+      cta: "Send an Email",
+      github: "Github",
+    },
+    id: {
+      headline: "Let's Secure the Future",
+      subheadline: "Kami selalu terbuka untuk diskusi tentang peluang baru atau kolaborasi pada proyek website portfolio, landing page, atau profil perusahaan.",
+      cta: "Kirim Email",
+      github: "Github",
+    }
+  }
+
+  const content = labels[language]
+
   return (
     <section id="contact" className="min-h-screen flex items-center justify-center bg-secondary/30 relative">
        {/* Decorative gradient */}
@@ -15,9 +36,9 @@ export default function Contact() {
              transition={{ duration: 0.6 }}
              viewport={{ once: true }}
           >
-             <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6 text-primary">Let's Secure the Future</h2>
+             <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6 text-primary">{content.headline}</h2>
              <p className="text-lg md:text-xl text-foreground leading-relaxed mb-8">
-               I'm always open to discussing new opportunities, security assessments, or collaboration on open-source projects.
+               {content.subheadline}
              </p>
           </motion.div>
 
@@ -29,10 +50,10 @@ export default function Contact() {
              className="flex flex-col sm:flex-row items-center justify-center gap-4"
           >
              <a href="mailto:iihsannlearn@gmail.com" className="w-full sm:w-auto h-14 px-8 rounded-xl bg-tertiary text-primary-foreground font-medium text-md md:text-lg flex items-center justify-center shadow-lg hover:bg-tertiary/90 hover:scale-105 transition-all">
-                Send an Email
+                {content.cta}
              </a>
              <a href="https://github.com/ihsanlearn" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto h-14 px-8 rounded-xl bg-card border border-input text-foreground font-medium text-lg flex items-center justify-center shadow-sm hover:bg-accent hover:border-primary/30 transition-all">
-                Github
+                {content.github}
              </a>
           </motion.div>
 

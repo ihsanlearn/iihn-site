@@ -4,6 +4,8 @@ import "./globals.css"
 import { ThemeProvider } from "@/components/providers/ThemeProvider";
 import Script from "next/script";
 import { ThemeToggle } from "@/components/ui/ThemeToggle";
+import { LanguageToggle } from "@/components/ui/LanguageToggle";
+import { LanguageProvider } from "@/lib/LanguageContext";
 
 const plusJakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -271,8 +273,11 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {children}
-          <ThemeToggle />
+          <LanguageProvider>
+            {children}
+            <LanguageToggle />
+            <ThemeToggle />
+          </LanguageProvider>
         </ThemeProvider>
       </body>
     </html>
